@@ -1,5 +1,5 @@
 {
-  "name": "forkify",
+  "name": "front_end_boilerplate",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",

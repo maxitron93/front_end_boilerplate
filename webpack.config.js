@@ -4,10 +4,11 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const webpack = require('webpack')
 
-const config = (env) => {
-    const isProduction = env === 'production'
+module.exports = (env) => {
+    isProduction = env === 'production'
     console.log("Production environment:", isProduction)
-    return {
+    
+    const config = {
         entry: ['@babel/polyfill', './src/js/index.js'],
         output: {
             path: path.resolve(__dirname, 'dist'),
@@ -69,10 +70,10 @@ const config = (env) => {
         ],
         devtool: isProduction ? 'source-map' : 'inline-source-map'
     }
-}
 
-if (process.env.ENV === 'production') {
-  config.plugins.push(new BundleAnalyzerPlugin());
-}
+    if (isProduction) {
+      config.plugins.push(new BundleAnalyzerPlugin());
+    }
 
-module.exports = config
+    return config
+}

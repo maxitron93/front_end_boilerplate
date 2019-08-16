@@ -15,3 +15,4 @@ document.querySelector('body').insertAdjacentHTML('beforeend', html)
 
 const tabs = document.querySelector('.tabs')  // This is how to initialize materialize components
 var instance = M.Tabs.init(tabs); // This is how to initialize materialize components
+
