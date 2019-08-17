@@ -1,5 +1,9 @@
 ### Overview
 - No JS Framework
+- MVC structure
+- builds styles.css in /dist/css
+- builds bundle.js in /dist/js
+- stores all images in /dist/img during build
 - scss support included
 - materialize-css support included
 
@@ -21,6 +25,7 @@
 - npm install @babel/preset-env --save-dev
 - npm install babel-loader --save-dev
 - npm install @babel/polyfill --save
+- npm install @babel/plugin-proposal-object-rest-spread --save-dev
 - npm install file-loader --save-dev
 - npm install webpack-bundle-analyzer --save-dev
 - npm install normalize.css --save-dev
