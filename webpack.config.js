@@ -9,7 +9,7 @@ module.exports = (env) => {
     console.log("Production environment:", isProduction)
     
     const config = {
-        entry: ['@babel/polyfill', './src/js/index.js'],
+        entry: ['@babel/polyfill', './src/js/app.js'],
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: 'js/bundle.js'
